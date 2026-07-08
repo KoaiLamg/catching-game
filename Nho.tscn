@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://ij235o7shv00"]
 
-[node name="RigidBody2D" type="RigidBody2D" unique_id=1426694814]
+[ext_resource type="Script" uid="uid://dvbublbdybkbl" path="res://nho.gd" id="1_8yuoj"]
+[ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="2_8bor2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(61, 60.5)
+
+[node name="Nho" type="RigidBody2D" unique_id=1426694814]
+script = ExtResource("1_8yuoj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=29997640]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2122259614]
+texture = ExtResource("2_8bor2")
