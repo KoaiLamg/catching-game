@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://00gab378w6v4" path="res://mồm.gd" id="1_3eow4"]
 [ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="1_xicl5"]
+[ext_resource type="Script" uid="uid://dpb32gxtx4xsr" path="res://Khuvuccham.gd" id="3_5sr6b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
 
@@ -19,6 +20,7 @@ texture = ExtResource("1_xicl5")
 shape = SubResource("CircleShape2D_1vivr")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=630182777]
+script = ExtResource("3_5sr6b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2022378242]
 position = Vector2(1.0000062, -1)
