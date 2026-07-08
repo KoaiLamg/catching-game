@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(61, 60.5)
 
-[node name="Nho" type="RigidBody2D" unique_id=1426694814]
+[node name="Nho" type="StaticBody2D" unique_id=304031525]
 script = ExtResource("1_8yuoj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=29997640]
