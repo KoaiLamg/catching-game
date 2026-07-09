@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://bbnyp04iqjqps"]
 
-[ext_resource type="PackedScene" uid="uid://ij235o7shv00" path="res://Nho.tscn" id="1_r4rdr"]
 [ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://Mồm.tscn" id="2_3qfuk"]
+[ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
 
 [node name="Sceen" type="Node2D" unique_id=1243487346]
 
 [node name="Mồm" parent="." unique_id=93005633 instance=ExtResource("2_3qfuk")]
 position = Vector2(1208, 589)
 
-[node name="Nho" parent="." unique_id=361143264 instance=ExtResource("1_r4rdr")]
-position = Vector2(729, 264)
+[node name="Bo roi ngau nhien" parent="." unique_id=1707146006 instance=ExtResource("2_w7xkx")]
+position = Vector2(-3, 178)
