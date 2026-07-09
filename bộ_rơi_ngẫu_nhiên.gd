@@ -21,5 +21,12 @@ func spawn_item():
 	var random_y = randf_range(-size.y / 2, size.y / 2)
 
 	item.global_position = spawn_area.global_position + Vector2(random_x, random_y)
-
 	add_child(item)
+	#print(spawn_area.position)
+	#print($SpawnArea/RandomKid.position)
+	#print(spawn_area.scale)
+	print("----------------")
+	print("SpawnArea:", spawn_area.global_position)
+	print("Item:", item.global_position)
+	print("Random X:", random_x)
+	print("Random Y:", random_y)

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="2_o12ke"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3x2by"]
-size = Vector2(568, 78)
+size = Vector2(1431, 78)
 
 [node name="Bo roi ngau nhien" type="Node2D" unique_id=1707146006]
 script = ExtResource("1_3x2by")
@@ -15,11 +15,9 @@ autostart = true
 
 [node name="SpawnArea" type="Area2D" parent="." unique_id=1321388226]
 
-[node name="RandomKid" type="CollisionShape2D" parent="SpawnArea" unique_id=1649289285]
-position = Vector2(619, 32)
-shape = SubResource("RectangleShape2D_3x2by")
-
 [node name="Sprite2D" type="Sprite2D" parent="SpawnArea" unique_id=2016800091]
-position = Vector2(608.5, 30)
-scale = Vector2(4.6953125, 1)
+scale = Vector2(11.316405, 1)
 texture = ExtResource("2_o12ke")
+
+[node name="RandomKid" type="CollisionShape2D" parent="SpawnArea" unique_id=1649289285]
+shape = SubResource("RectangleShape2D_3x2by")

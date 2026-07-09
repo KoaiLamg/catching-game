@@ -9,4 +9,8 @@
 position = Vector2(1208, 589)
 
 [node name="Bo roi ngau nhien" parent="." unique_id=1707146006 instance=ExtResource("2_w7xkx")]
-position = Vector2(-3, 178)
+position = Vector2(557, 108)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=386399931]
+position = Vector2(596, 273)
+zoom = Vector2(0.5, 0.5)
