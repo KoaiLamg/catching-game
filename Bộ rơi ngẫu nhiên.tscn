@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://bmedtgpodo6x4"]
 
-[node name="Node2D" type="Node2D" unique_id=1707146006]
+[ext_resource type="Script" uid="uid://0xlnaapdh6dn" path="res://bộ_rơi_ngẫu_nhiên.gd" id="1_3x2by"]
+
+[node name="Bo roi ngau nhien" type="Node2D" unique_id=1707146006]
+script = ExtResource("1_3x2by")
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1618200959]
+wait_time = 1.5
+autostart = true
