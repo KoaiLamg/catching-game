@@ -14,6 +14,11 @@ scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_1vivr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2122259614]
+texture_filter = 1
+texture = ExtResource("2_8bor2")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=420501214]
+position = Vector2(390, 159)
 texture = ExtResource("2_8bor2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
