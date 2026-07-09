@@ -6,11 +6,10 @@
 [node name="Sceen" type="Node2D" unique_id=1243487346]
 
 [node name="Mồm" parent="." unique_id=93005633 instance=ExtResource("2_3qfuk")]
-position = Vector2(1208, 589)
+position = Vector2(727, 593)
 
 [node name="Bo roi ngau nhien" parent="." unique_id=1707146006 instance=ExtResource("2_w7xkx")]
-position = Vector2(557, 108)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=386399931]
-position = Vector2(596, 273)
+position = Vector2(-199, 240)
 zoom = Vector2(0.5, 0.5)

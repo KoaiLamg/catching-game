@@ -10,7 +10,7 @@ func _ready():
 	spawn_timer.timeout.connect(spawn_item)
 	spawn_item()
 	spawn_timer.start()
-
+"""
 func spawn_item():
 	var item = item_scene.instantiate()
 
@@ -30,3 +30,20 @@ func spawn_item():
 	print("Item:", item.global_position)
 	print("Random X:", random_x)
 	print("Random Y:", random_y)
+"""
+func spawn_item():
+	var item = item_scene.instantiate()
+	print(item.position)
+	print(item.global_position)
+	print(item.get_parent())
+	var shape = $SpawnArea/RandomKid.shape as RectangleShape2D
+	var half = shape.size * 0.5
+
+	var local_pos = Vector2(
+		randf_range(-half.x, half.x),
+		randf_range(-half.y, half.y))
+	item.global_position = $SpawnArea.to_global(local_pos)
+	add_child(item)
+	print(item.position)
+	print(item.global_position)
+	print(item.get_parent())
