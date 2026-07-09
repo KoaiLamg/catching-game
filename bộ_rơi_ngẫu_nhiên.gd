@@ -31,7 +31,7 @@ func spawn_item():
 	print("Random X:", random_x)
 	print("Random Y:", random_y)
 """
-func spawn_item():
+"""func spawn_item():
 	var item = item_scene.instantiate()
 	print(item.position)
 	print(item.global_position)
@@ -46,4 +46,15 @@ func spawn_item():
 	add_child(item)
 	print(item.position)
 	print(item.global_position)
-	print(item.get_parent())
+	print(item.get_parent())"""
+func spawn_item():
+	var item = item_scene.instantiate()
+	var shape = $SpawnArea/RandomKid.shape as RectangleShape2D
+	var half = shape.size * 0.5
+
+	item.position = $SpawnArea.position + Vector2(
+		randf_range(-half.x, half.x),
+		randf_range(-half.y, half.y)
+	)
+
+	add_child(item)
