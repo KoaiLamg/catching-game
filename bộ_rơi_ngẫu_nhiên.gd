@@ -1,5 +1,5 @@
 extends Node2D
 
-@export var Item: "res://Nho.tscn"
 
+@ỏ$Nho
 @onready var spawn_timer = $SpawnTimer
