@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bbnyp04iqjqps"]
 
-[ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://Mồm.tscn" id="2_3qfuk"]
-[ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
+[ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://tscn/Mồm.tscn" id="2_3qfuk"]
+[ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://tscn/Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
 
 [node name="Sceen" type="Node2D" unique_id=1243487346]
 
