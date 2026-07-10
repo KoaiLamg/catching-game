@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://bmedtgpodo6x4"]
 
-[ext_resource type="Script" uid="uid://0xlnaapdh6dn" path="res://bộ_rơi_ngẫu_nhiên.gd" id="1_3x2by"]
-[ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="2_o12ke"]
+[ext_resource type="Script" uid="uid://0xlnaapdh6dn" path="res://code/bộ_rơi_ngẫu_nhiên.gd" id="1_dv5ap"]
+[ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="2_5vy30"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3x2by"]
 size = Vector2(1431, 78)
 
 [node name="Bo roi ngau nhien" type="Node2D" unique_id=1707146006]
-script = ExtResource("1_3x2by")
+script = ExtResource("1_dv5ap")
 
 [node name="SpawnTimer" type="Timer" parent="." unique_id=1618200959]
 wait_time = 1.5
@@ -17,7 +17,7 @@ autostart = true
 
 [node name="Sprite2D" type="Sprite2D" parent="SpawnArea" unique_id=2016800091]
 scale = Vector2(11.316405, 1)
-texture = ExtResource("2_o12ke")
+texture = ExtResource("2_5vy30")
 
 [node name="RandomKid" type="CollisionShape2D" parent="SpawnArea" unique_id=1649289285]
 shape = SubResource("RectangleShape2D_3x2by")

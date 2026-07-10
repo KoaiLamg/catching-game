@@ -3,7 +3,7 @@ extends Node2D
 @onready var spawn_timer = $SpawnTimer
 @onready var spawn_area = $SpawnArea
 
-var item_scene = preload("res://Nho.tscn")
+var item_scene = preload("res://tscn/Nho.tscn")
 
 func _ready():
 
