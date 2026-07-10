@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://1re7d2x0k3s5"]
+
+[ext_resource type="Script" path="res://nho.gd" id="1_8yuoj"]
+[ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="2_8bor2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(82.5, 77)
+
+[node name="Nho" type="Area2D" unique_id=361143264]
+script = ExtResource("1_8yuoj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=29997640]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=787921165]
+texture = ExtResource("2_8bor2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
