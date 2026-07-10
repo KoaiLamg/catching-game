@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://bjjaxmuxt8o0s"]
 
-[node name="Node2D" type="Node2D" unique_id=1911030782]
+[ext_resource type="Script" uid="uid://b0ind87brsuup" path="res://khuvucday.gd" id="1_tgyfb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(100, 20)
+
+[node name="Khuvucday" type="Area2D" unique_id=2093962908]
+script = ExtResource("1_tgyfb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=827003167]
+scale = Vector2(16, 8)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

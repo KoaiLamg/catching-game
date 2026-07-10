@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://Mồm.tscn" id="2_3qfuk"]
 [ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
 [ext_resource type="Script" uid="uid://c04fd1ve14b6r" path="res://canvas_layer.gd" id="4_m4s0i"]
+[ext_resource type="PackedScene" uid="uid://bjjaxmuxt8o0s" path="res://Khuvucday.tscn" id="5_hntja"]
 
 [node name="Sceen" type="Node2D" unique_id=1243487346]
 script = ExtResource("1_w7xkx")
@@ -12,7 +13,6 @@ script = ExtResource("1_w7xkx")
 position = Vector2(727, 593)
 
 [node name="Bo roi ngau nhien" parent="." unique_id=1707146006 instance=ExtResource("2_w7xkx")]
-position = Vector2(100, 100)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=386399931]
 zoom = Vector2(0.5, 0.5)
@@ -23,3 +23,6 @@ script = ExtResource("4_m4s0i")
 [node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=338252742]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Khuvucday" parent="." unique_id=2093962908 instance=ExtResource("5_hntja")]
+position = Vector2(7, 801)
