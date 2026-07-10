@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://bjjaxmuxt8o0s"]
 
-[ext_resource type="Script" uid="uid://b0ind87brsuup" path="res://khuvucday.gd" id="1_tgyfb"]
+[ext_resource type="Script" uid="uid://b0ind87brsuup" path="res://code/khuvucday.gd" id="1_y0wap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(100, 20)
 
 [node name="Khuvucday" type="Area2D" unique_id=2093962908]
-script = ExtResource("1_tgyfb")
+script = ExtResource("1_y0wap")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=827003167]
 scale = Vector2(16, 8)

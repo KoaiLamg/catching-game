@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://delr4nf88f4u0"]
 
-[ext_resource type="Script" uid="uid://00gab378w6v4" path="res://mồm.gd" id="1_3eow4"]
-[ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="1_xicl5"]
+[ext_resource type="Script" uid="uid://00gab378w6v4" path="res://code/mồm.gd" id="1_thvqr"]
+[ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="2_xdc5s"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0jojp"]
 
@@ -9,12 +9,12 @@
 size = Vector2(263, 48)
 
 [node name="Mồm" type="CharacterBody2D" unique_id=93005633]
-script = ExtResource("1_3eow4")
+script = ExtResource("1_thvqr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=776124393]
 material = SubResource("CanvasItemMaterial_0jojp")
 scale = Vector2(2, 0.5)
-texture = ExtResource("1_xicl5")
+texture = ExtResource("2_xdc5s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=667972773]
 shape = SubResource("RectangleShape2D_5sr6b")
