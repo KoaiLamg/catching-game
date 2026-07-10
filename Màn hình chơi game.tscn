@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://bbnyp04iqjqps"]
 
+[ext_resource type="Script" uid="uid://t5h8wirnfem8" path="res://Quan_ly_diem.gd" id="1_w7xkx"]
 [ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://Mồm.tscn" id="2_3qfuk"]
 [ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
 
 [node name="Sceen" type="Node2D" unique_id=1243487346]
+script = ExtResource("1_w7xkx")
 
 [node name="Mồm" parent="." unique_id=93005633 instance=ExtResource("2_3qfuk")]
 position = Vector2(727, 593)
