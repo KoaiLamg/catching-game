@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://t5h8wirnfem8" path="res://Quan_ly_diem.gd" id="1_w7xkx"]
 [ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://Mồm.tscn" id="2_3qfuk"]
 [ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
+[ext_resource type="Script" uid="uid://c04fd1ve14b6r" path="res://canvas_layer.gd" id="4_m4s0i"]
 
 [node name="Sceen" type="Node2D" unique_id=1243487346]
 script = ExtResource("1_w7xkx")
@@ -15,3 +16,10 @@ position = Vector2(100, 100)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=386399931]
 zoom = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1404765216]
+script = ExtResource("4_m4s0i")
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=338252742]
+offset_right = 40.0
+offset_bottom = 23.0

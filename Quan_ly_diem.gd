@@ -1,10 +1,9 @@
 extends Node
 
+signal score_changed(new_score)
+
 var score := 0
 
 func add_score():
 	score += 1
-	print("Score:", score)
-
-func reset_score():
-	score = 0
+	score_changed.emit(score)
