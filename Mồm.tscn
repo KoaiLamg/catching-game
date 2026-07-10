@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://00gab378w6v4" path="res://mồm.gd" id="1_3eow4"]
 [ext_resource type="Texture2D" uid="uid://dr4jv7mjalv5q" path="res://icon.svg" id="1_xicl5"]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0jojp"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5sr6b"]
 size = Vector2(263, 48)
 
@@ -10,6 +12,7 @@ size = Vector2(263, 48)
 script = ExtResource("1_3eow4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=776124393]
+material = SubResource("CanvasItemMaterial_0jojp")
 scale = Vector2(2, 0.5)
 texture = ExtResource("1_xicl5")
 
