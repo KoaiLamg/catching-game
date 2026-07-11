@@ -1,28 +1,28 @@
 [gd_scene format=3 uid="uid://bbnyp04iqjqps"]
 
-[ext_resource type="Script" uid="uid://t5h8wirnfem8" path="res://code/Quan_ly_diem.gd" id="1_w7xkx"]
-[ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://tscn/Mồm.tscn" id="2_3qfuk"]
-[ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://tscn/Bộ rơi ngẫu nhiên.tscn" id="2_w7xkx"]
-[ext_resource type="Script" uid="uid://c04fd1ve14b6r" path="res://code/canvas_layer.gd" id="4_m4s0i"]
-[ext_resource type="PackedScene" uid="uid://bjjaxmuxt8o0s" path="res://tscn/Khuvucday.tscn" id="5_hntja"]
+[ext_resource type="Script" uid="uid://t5h8wirnfem8" path="res://code/Quan_ly_diem.gd" id="1_6otj6"]
+[ext_resource type="PackedScene" uid="uid://delr4nf88f4u0" path="res://tscn/Mồm.tscn" id="2_1jwej"]
+[ext_resource type="PackedScene" uid="uid://bmedtgpodo6x4" path="res://tscn/Bộ rơi ngẫu nhiên.tscn" id="3_jsrhy"]
+[ext_resource type="Script" uid="uid://c04fd1ve14b6r" path="res://code/canvas_layer.gd" id="4_8dgak"]
+[ext_resource type="PackedScene" uid="uid://bjjaxmuxt8o0s" path="res://tscn/Khuvucday.tscn" id="5_n7r5a"]
 
 [node name="Sceen" type="Node2D" unique_id=1243487346]
-script = ExtResource("1_w7xkx")
+script = ExtResource("1_6otj6")
 
-[node name="Mồm" parent="." unique_id=93005633 instance=ExtResource("2_3qfuk")]
+[node name="Mồm" parent="." unique_id=93005633 instance=ExtResource("2_1jwej")]
 position = Vector2(727, 593)
 
-[node name="Bo roi ngau nhien" parent="." unique_id=1707146006 instance=ExtResource("2_w7xkx")]
+[node name="Bo roi ngau nhien" parent="." unique_id=1707146006 instance=ExtResource("3_jsrhy")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=386399931]
 zoom = Vector2(0.5, 0.5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1404765216]
-script = ExtResource("4_m4s0i")
+script = ExtResource("4_8dgak")
 
 [node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=338252742]
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="Khuvucday" parent="." unique_id=2093962908 instance=ExtResource("5_hntja")]
+[node name="Khuvucday" parent="." unique_id=2093962908 instance=ExtResource("5_n7r5a")]
 position = Vector2(7, 801)
